@@ -1,8 +1,6 @@
-image: mischief/docker-golang
-env:
-  - GOPATH=/var/cache/drone
+image: bradrydzewski/php:5.4 
 script:
-  - go build
-  - go test -v
+  - php -a 'var_dump(time());'
 services:
+  - mysql
   - redis
