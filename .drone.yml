@@ -1,6 +1,6 @@
 image: moul/drupal
 script:
-  - php -a 'var_dump(time());'
+  - php -r 'var_dump(time());' 
 services:
   - mysql
   - redis
